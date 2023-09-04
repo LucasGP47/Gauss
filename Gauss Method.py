@@ -19,7 +19,7 @@ def metodoGauss(matriz1, result, max_iter=100, tol=1e-6):
             result[j] -= factor * result[i]
 
         if i >= max_iter:
-            print("Não conseguiu convergir em {} iterações.".format(max_iter))
+            print("O método não convergiu após {} iterações.".format(max_iter))
             print("Matriz parcial:")
             for row in matriz1:
                 print(row)
@@ -34,14 +34,14 @@ def metodoGauss(matriz1, result, max_iter=100, tol=1e-6):
     return x
 
 def main():
-    matriz = [[-21, 1, -2],
-             [-2, -3, 1], 
+    matriz = [[6, 1, -2],
+             [-2, -3, 1],
              [-1, -2, 4]]
-    
+   
     resultado = [6,
-                -5, 
+                -5,
                 -6.5]
-    
+   
     finalM = metodoGauss(matriz, resultado)
 
     print("Resultado Final:")
