@@ -1,4 +1,4 @@
-def metodoGauss(matriz1, result, max_iter=100, tol=1e-6):
+def metodoGauss(matriz1, result, max_iter=100):
     n = len(matriz1)
     x = [0] * n
 
